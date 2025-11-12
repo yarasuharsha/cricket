@@ -1,0 +1,60 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #009688, #4caf50);
+  color: white;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.container {
+  max-width: 700px;
+  margin: 50px auto;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+h1 {
+  color: #ffe600;
+  text-shadow: 2px 2px 8px #000;
+}
+
+#scoreboard, #player-actions, #commentary, #manual-controls {
+  margin: 25px 0;
+}
+
+button {
+  background-color: #ffe600;
+  color: #000;
+  border: none;
+  padding: 10px 20px;
+  margin: 8px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: transform 0.2s, background 0.3s;
+}
+
+button:hover {
+  transform: scale(1.1);
+  background-color: #ffeb3b;
+}
+
+#commentary-text {
+  font-size: 18px;
+  color: #fff;
+  font-style: italic;
+  margin-top: 10px;
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: 90%;
+  }
+  button {
+    display: block;
+    margin: 10px auto;
+  }
+}
